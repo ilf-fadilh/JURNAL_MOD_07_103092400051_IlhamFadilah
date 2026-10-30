@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COTS 1 ProWeb</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-size: 14px;
+      }
+      .ikon-kecil {
+        width: 14px;
+        height: 14px;
+      }
+
+      .sidebar {
+        background: #ebebeb;
+        min-height: 100vh;
+      }
+      .judul-sidebar {
+        background: #333;
+        color: #ffffff;
+      }
+      .item-surat {
+        background: #ffffff;
+        border-left: 4px solid #333333;
+        border-radius: 4px;
+      }
+
+      .tab-dashboard {
+        background: #ee6a2b;
+        color: #ffffff;
+      }
+      .garis-oranye {
+        border-bottom: 4px solid #ee6a2b;
+        background: #c9c9c9;
+      }
+
+      .hijau {
+        background: #10ae2f;
+        border-color: #10ae2f;
+      }
+      .biru {
+        background: #1096bb;
+        border-color: #1096bb;
+      }
+      .merah {
+        background: #b71b20;
+        border-color: #b71b20;
+      }
+      .teks-hijau {
+        color: #23bf43;
+      }
+      .teks-biru {
+        color: #1096bb;
+      }
+      .teks-merah {
+        color: #b71b20;
+      }
+      .ikon-kartu {
+        width: 60px;
+        height: 60px;
+      }
+
+      .panel-todo {
+        background: #7266ba;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. HEADER & TOOLBAR -->
+    <div
+      class="d-flex justify-content-between px-2 py-1 fw-bold"
+      style="background: #c9c9c9"
+    >
+      <span class="fs-5">COTS 1 ProWeb</span>
+      <span class="fw-normal">Hi, 103092400051 - ILHAM FADILAH</span>
+    </div>
+
+    <div class="d-flex align-items-center px-2 py-2 border-bottom">
+      <a
+        href="#"
+        class="btn btn-light btn-sm border me-2 fw-bold text-secondary"
+      >
+        <img
+          src="ICONS/kotak-masuk-abu.svg"
+          class="ikon-kecil me-1"
+          alt=""
+        />Incoming Letter
+      </a>
+      <a href="#" class="btn btn-light btn-sm border fw-bold text-secondary">
+        <img src="ICONS/folder-abu.svg" class="ikon-kecil me-1" alt="" />My
+        Folder
+      </a>
+
+      <div class="ms-auto d-flex">
+        <input
+          type="text"
+          class="form-control form-control-sm me-1"
+          placeholder="Search ..."
+          style="width: 150px"
+        />
+        <button class="btn btn-light btn-sm border">
+          <img src="ICONS/cari-abu.svg" class="ikon-kecil" alt="Cari" />
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. SIDEBAR -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 sidebar p-0">
+          <div class="judul-sidebar fw-bold px-2 py-2">Incoming Letter</div>
+
+          <div class="item-surat d-flex m-1 p-2">
+            <img
+              src="ICONS/surat-abu-muda.svg"
+              width="22"
+              height="22"
+              class="me-2 mt-1"
+              alt=""
+            />
+            <div class="flex-grow-1" style="min-width: 0">
+              <div class="fw-bold">Sekretariat Presiden Republik Indonesia</div>
+              <div class="text-secondary small">
+                Bakar lahan lalu tanam sawit untuk menjadi komisaris
+              </div>
+            </div>
+            <div class="text-secondary small text-end ms-2">
+              29 Oct<br />14:14
+            </div>
+          </div>
+
+          <div class="item-surat d-flex m-1 p-2">
+            <img
+              src="ICONS/surat-abu-muda.svg"
+              width="22"
+              height="22"
+              class="me-2 mt-1"
+              alt=""
+            />
+            <div class="flex-grow-1" style="min-width: 0">
+              <div class="fw-bold">Partai Komuni-kasi Indonesia</div>
+              <div class="text-secondary small">
+                Anda diminta untuk menghadap Bapak Presiden sekarang!
+              </div>
+            </div>
+            <div class="text-secondary small text-end ms-2">
+              30 Sep<br />03:00
+            </div>
+          </div>
+
+          <div class="item-surat d-flex m-1 p-2">
+            <img
+              src="ICONS/surat-abu-muda.svg"
+              width="22"
+              height="22"
+              class="me-2 mt-1"
+              alt=""
+            />
+            <div class="flex-grow-1" style="min-width: 0">
+              <div class="fw-bold">Kaprodi Teknologi Informasi</div>
+              <div class="text-secondary small">
+                Selamat Ilham, anda mendapatkan predikat Cumlaude!
+              </div>
+            </div>
+            <div class="text-secondary small text-end ms-2">
+              17 Aug<br />18:18
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-lg-9 p-0">
+          <!-- 3. DASHBOARD -->
+          <div class="garis-oranye">
+            <span class="tab-dashboard d-inline-block fw-bold px-3 py-2"
+              >Dashboard</span
+            >
+          </div>
+
+          <div class="p-3">
+            <div class="mb-3">
+              <a
+                href="#"
+                class="btn btn-light btn-sm border fw-bold text-secondary me-1 mb-1"
+              >
+                <img
+                  src="ICONS/dokumen-abu.svg"
+                  class="ikon-kecil me-1"
+                  alt=""
+                />Create Internal Letter</a
+              >
+              <a
+                href="#"
+                class="btn btn-light btn-sm border fw-bold text-secondary me-1 mb-1"
+              >
+                <img
+                  src="ICONS/dokumen-abu.svg"
+                  class="ikon-kecil me-1"
+                  alt=""
+                />Create External Letter</a
+              >
+              <a
+                href="#"
+                class="btn btn-light btn-sm border fw-bold text-secondary mb-1"
+              >
+                <img
+                  src="ICONS/dokumen-abu.svg"
+                  class="ikon-kecil me-1"
+                  alt=""
+                />Create Invitational Letter</a
+              >
+            </div>
+
+            <div class="row g-3 mb-4">
+              <!-- card ijo -->
+              <div class="col-md-4">
+                <div class="card hijau text-white">
+                  <div
+                    class="card-body d-flex justify-content-between"
+                    style="height: 120px"
+                  >
+                    <img
+                      src="ICONS/kotak-masuk-putih.svg"
+                      class="ikon-kartu mt-2"
+                      alt=""
+                    />
+                    <div class="text-end">
+                      <div class="fs-1 lh-1">0</div>
+                      <div class="mt-3">Need Follow Up</div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-footer bg-white d-flex justify-content-between align-items-center border-0 teks-hijau"
+                  >
+                    View Details
+                    <img
+                      src="ICONS/panah-hijau.svg"
+                      class="ikon-kecil"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- card biru -->
+              <div class="col-md-4">
+                <div class="card biru text-white">
+                  <div
+                    class="card-body d-flex justify-content-between"
+                    style="height: 120px"
+                  >
+                    <img
+                      src="ICONS/dokumen-putih.svg"
+                      class="ikon-kartu mt-2"
+                      alt=""
+                    />
+                    <div class="text-end">
+                      <div class="fs-1 lh-1">0</div>
+                      <div class="mt-3">Incoming Letter</div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-footer bg-white d-flex justify-content-between align-items-center border-0 teks-biru"
+                  >
+                    View Details
+                    <img src="ICONS/panah-biru.svg" class="ikon-kecil" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- card merah -->
+              <div class="col-md-4">
+                <div class="card merah text-white">
+                  <div
+                    class="card-body d-flex justify-content-between"
+                    style="height: 120px"
+                  >
+                    <img
+                      src="ICONS/percakapan-putih.svg"
+                      class="ikon-kartu mt-2"
+                      alt=""
+                    />
+                    <div class="text-end">
+                      <div class="fs-1 lh-1">0</div>
+                      <div class="mt-3">Disposition</div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-footer bg-white d-flex justify-content-between align-items-center border-0 teks-merah"
+                  >
+                    View Details
+                    <img
+                      src="ICONS/panah-merah.svg"
+                      class="ikon-kecil"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. PANEL TODO -->
+            <div class="panel-todo text-white p-2">
+              <div class="mb-1">Todo</div>
+              <div class="input-group input-group-sm">
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  placeholder="Search todo..."
+                />
+                <span class="input-group-text bg-white border-0">
+                  <img
+                    src="ICONS/cari-abu-gelap.svg"
+                    class="ikon-kecil"
+                    alt="Cari"
+                  />
+                </span>
+              </div>
+            </div>
+            <p class="text-center fst-italic mt-3">You don’t have ToDo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
